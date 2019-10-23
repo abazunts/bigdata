@@ -1,0 +1,38 @@
+{
+  "data": {
+    "Column1": "Column 1",
+    "Column2": "Column 2",
+    "Column3": "Column 3",
+    "Column4": "Column 4",
+    "Column5": "Column 5",
+    "Column6": "Column 6",
+    "Column7": "Column 7",
+    "Column8": "Column 8",
+    "Column9": "Column 9",
+    "Column10": "Column 10",
+    "title": "Data table"
+  },
+  "login": {
+    "email": "Username",
+    "password": "Password",
+    "loginButton": "Login",
+    "authorization": "Authorization",
+    "authorizationHelloMessage": "Please enter username and password"
+  },
+  "code": {
+    "en": "English"
+  },
+  "errors": {
+    "isRequired": "Filed is Required",
+    "email": "Email is Required",
+    "password": "Password is Required"
+  },
+  "filter": {
+    "region": "Region",
+    "law": "Law",
+    "period": "Period",
+    "type": "Type",
+    "title": "Data filter",
+    "btn": "Submit"
+  }
+}
