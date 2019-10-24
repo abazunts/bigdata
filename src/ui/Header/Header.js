@@ -1,10 +1,10 @@
 import React, {Fragment} from 'react'
-import UserInfoContainer from "../Login/UserInfo";
+import {UserInfoContainer} from "../Login/";
 import {translate} from "react-i18next";
 import '../../resources/less/styles.less'
 import {compose} from "redux";
 
-const Header = (props) => {
+const Header = () => {
     return <Fragment>
         <header className={'header'}>
             <div className="header-wrap">

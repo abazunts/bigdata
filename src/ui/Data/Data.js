@@ -1,13 +1,11 @@
 import React from 'react';
 import MaterialTable from 'material-table';
-import {connect} from "react-redux";
-import {compose} from "redux";
-import {translate} from "react-i18next";
-import {Redirect, withRouter} from "react-router-dom";
+import {Redirect} from "react-router-dom";
 import 'react-table/react-table.css'
+import {Button} from "../../elements/Button";
 
 const Data = (props) => {
-    const {t, isAuth} = props;
+    const {t, isAuth, handleExportToExcel} = props;
     return <div>
         {!isAuth && <Redirect to={'/login'}/>}
             <div>
@@ -15,6 +13,12 @@ const Data = (props) => {
                 <div className="content-header b-b">
                     <p className="content-header__subtitle">{t('data.title')}</p>
                     <h2 className="content-header__title">{t('data.title')}</h2>
+                    <div className="modal-footer text-left b-t mt-lg">
+                        <Button title={t("data.ExportXSL")}
+                                className="btn btn--brand btn--long btn--no-shadow js-services-modal-toggler"
+                                onClick={handleExportToExcel}
+                        />
+                    </div>
                 </div>
                 <div className="modal-footer">
                     <MaterialTable
@@ -38,31 +42,5 @@ const Data = (props) => {
     </div>
 };
 
-const DataContainer = (props) => {
-    const { t } = props;
 
-    const columns = [
-        {title: t('data.Column1'), field: 'shopDto.shopName'},
-        {title: t('data.Column2'), field: 'inspectionType'},
-        {title: t('data.Column3'), field: 'inspectionDate'},
-        {title: t('data.Column4'), field: 'employeeName'},
-        {title: t('data.Column5'), field: 'violationsCount'},
-    ];
-
-    return <>
-        <Data {...props} columns={columns} />
-    </>
-};
-
-const mapStateToProps = (state) => {
-    return {
-        isAuth: state.loginPage.isAuth
-    }
-};
-
-
-export default compose(
-    withRouter,
-    connect(mapStateToProps),
-    translate("common"),
-)(DataContainer)
+export default Data

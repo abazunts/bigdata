@@ -10,10 +10,11 @@
     "Column8": "Column 8",
     "Column9": "Column 9",
     "Column10": "Column 10",
-    "title": "Data table"
+    "title": "Data table",
+    "ExportXSL": "Export to Excel"
   },
   "login": {
-    "email": "Username",
+    "username": "Username",
     "password": "Password",
     "loginButton": "Login",
     "authorization": "Authorization",
@@ -24,7 +25,7 @@
   },
   "errors": {
     "isRequired": "Filed is Required",
-    "email": "Email is Required",
+    "username": "Email is Required",
     "password": "Password is Required"
   },
   "filter": {

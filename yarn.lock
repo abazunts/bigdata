@@ -10183,6 +10183,11 @@ react-google-maps@^9.4.5:
     scriptjs "^2.5.8"
     warning "^3.0.0"
 
+react-hook-form@^3.25.0:
+  version "3.25.0"
+  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-3.25.0.tgz#9f7721a5de8975f8fb07f30e4af14c5ddd14e8f1"
+  integrity sha512-DCRbMQB8qK1qnNOJ3FlUP90hilmCwTOc3bOKtxKYTucbOxVrCfWCW3ZIi7UaPxpZfDFAxreBZXqh8KiseFoX6g==
+
 react-i18next@^8.3.8:
   version "8.4.0"
   resolved "https://registry.yarnpkg.com/react-i18next/-/react-i18next-8.4.0.tgz#e9f0c5b9938b155eaa6051360614719c08cae72f"
