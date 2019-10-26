@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {store} from "./redux/store";
-import {BrowserRouter} from "react-router-dom";
+import {BrowserRouter, HashRouter} from "react-router-dom";
 import {Provider} from "react-redux";
 import {I18nextProvider} from "react-i18next";
 import i18next from 'i18next';
@@ -25,9 +25,9 @@ i18next.init({
 ReactDOM.render(
     <I18nextProvider i18n={i18next} initialLanguage={'en'}>
         <Provider store={store}>
-            <BrowserRouter>
+            <HashRouter>
                 <App/>
-            </BrowserRouter>
+            </HashRouter>
         </Provider>
     </I18nextProvider>
     , document.getElementById('root'));
