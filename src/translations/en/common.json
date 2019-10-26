@@ -11,7 +11,9 @@
     "Column9": "Column 9",
     "Column10": "Column 10",
     "title": "Data table",
-    "ExportXSL": "Export to Excel"
+    "ExportXSL": "Export to Excel",
+    "startPeriodField": "Start Date",
+    "finishPeriodField": "End Date"
   },
   "login": {
     "username": "Username",

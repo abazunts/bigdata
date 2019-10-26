@@ -6,10 +6,25 @@ import {withRouter} from "react-router-dom";
 import {DataFilterForm} from "./";
 
 const DataFilterContainer = (props) => {
-    const submitForm = () => {
-        props.history.push(`../data`);
+    const [startDate, setStartDate] = React.useState('');
+    const [endDate, setEndDate] = React.useState('');
+    const [errorsDate, setErrorsDate] = React.useState(false);
+    const submitForm = (values) => {
+        endDate === ""
+            ? setErrorsDate(true)
+            : props.history.push(`../data`);
     };
-    return <DataFilterForm {...props} submitForm={submitForm}/>
+
+    const changeDate = (startDate, endDate) => {
+        if (endDate) {
+            setEndDate(endDate);
+            setErrorsDate(false)
+        } else {
+            setStartDate(startDate)
+        }
+    };
+    return <DataFilterForm {...props} submitForm={submitForm} changeDate={changeDate} startDate={startDate}
+                           endDate={endDate} errorsDate={errorsDate}/>
 };
 
 const mapStateToProps = (state) => {
