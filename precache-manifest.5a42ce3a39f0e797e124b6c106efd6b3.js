@@ -28,12 +28,16 @@ self.__precacheManifest = [
     "url": "/bigdata/static/media/ltbukra-bold-webfont.4972b374.eot"
   },
   {
+    "revision": "91ed980154af565deeb380eb66dddc1d",
+    "url": "/bigdata/static/media/ltbukra-bold-webfont.91ed9801.woff"
+  },
+  {
     "revision": "e8cd3e353d695217bdece78cea00e460",
     "url": "/bigdata/static/media/ltbukra-bold-webfont.e8cd3e35.woff2"
   },
   {
-    "revision": "91ed980154af565deeb380eb66dddc1d",
-    "url": "/bigdata/static/media/ltbukra-bold-webfont.91ed9801.woff"
+    "revision": "13afdf88572fad03419fc4c382e19438",
+    "url": "/bigdata/static/media/ltbukra-regular-webfont.13afdf88.eot"
   },
   {
     "revision": "706c12cd19784c7ccf2bbd4113c287be",
@@ -48,10 +52,6 @@ self.__precacheManifest = [
     "url": "/bigdata/static/media/ltbukra-regular-webfont.6495e188.woff2"
   },
   {
-    "revision": "13afdf88572fad03419fc4c382e19438",
-    "url": "/bigdata/static/media/ltbukra-regular-webfont.13afdf88.eot"
-  },
-  {
     "revision": "62ac976ecd2f557ea5ee085d8d1bb256",
     "url": "/bigdata/static/media/ltbukra-regular-webfont.62ac976e.woff"
   },
@@ -64,12 +64,12 @@ self.__precacheManifest = [
     "url": "/bigdata/static/media/icomoon.9cb761ca.eot"
   },
   {
-    "revision": "8420933c828141c14921c368e8667a3b",
-    "url": "/bigdata/static/media/icomoon.8420933c.woff"
-  },
-  {
     "revision": "bb33c6d336301712e2b0ba2ff9b3574b",
     "url": "/bigdata/static/media/icomoon.bb33c6d3.ttf"
+  },
+  {
+    "revision": "8420933c828141c14921c368e8667a3b",
+    "url": "/bigdata/static/media/icomoon.8420933c.woff"
   },
   {
     "revision": "a08cf7ddcb51e8e78ff2a62669dda41c",
