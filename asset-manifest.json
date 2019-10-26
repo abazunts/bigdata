@@ -1,10 +1,10 @@
 {
   "main.css": "/bigdata/static/css/main.dea9a581.chunk.css",
-  "main.js": "/bigdata/static/js/main.27ac164a.chunk.js",
-  "main.js.map": "/bigdata/static/js/main.27ac164a.chunk.js.map",
+  "main.js": "/bigdata/static/js/main.38a1151d.chunk.js",
+  "main.js.map": "/bigdata/static/js/main.38a1151d.chunk.js.map",
   "static/css/1.b4e766e2.chunk.css": "/bigdata/static/css/1.b4e766e2.chunk.css",
-  "static/js/1.2d024d04.chunk.js": "/bigdata/static/js/1.2d024d04.chunk.js",
-  "static/js/1.2d024d04.chunk.js.map": "/bigdata/static/js/1.2d024d04.chunk.js.map",
+  "static/js/1.4472ba9c.chunk.js": "/bigdata/static/js/1.4472ba9c.chunk.js",
+  "static/js/1.4472ba9c.chunk.js.map": "/bigdata/static/js/1.4472ba9c.chunk.js.map",
   "runtime~main.js": "/bigdata/static/js/runtime~main.c8dfbac0.js",
   "runtime~main.js.map": "/bigdata/static/js/runtime~main.c8dfbac0.js.map",
   "static/media/styles.less": "/bigdata/static/media/logo-sm.fe0889df.svg",
@@ -12,6 +12,6 @@
   "static/css/main.dea9a581.chunk.css.map": "/bigdata/static/css/main.dea9a581.chunk.css.map",
   "static/css/1.b4e766e2.chunk.css.map": "/bigdata/static/css/1.b4e766e2.chunk.css.map",
   "index.html": "/bigdata/index.html",
-  "precache-manifest.2264de050b73136cd31acf18fb69c2ec.js": "/bigdata/precache-manifest.2264de050b73136cd31acf18fb69c2ec.js",
+  "precache-manifest.a275034ea9e81d51c1ff458789bd132f.js": "/bigdata/precache-manifest.a275034ea9e81d51c1ff458789bd132f.js",
   "service-worker.js": "/bigdata/service-worker.js"
 }
