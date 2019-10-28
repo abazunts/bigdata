@@ -1,22 +1,15 @@
 import React, {Fragment} from 'react';
-import * as Yup from 'yup';
 import {Button} from "../../elements/Button/";
-import {CreatableSingle, SingleSelect} from "../../elements/field/";
+import {SingleSelect, TextAreaWrapper, Field, CheckBoxWrapper, CreatableSingle} from "../../elements/field/";
 import {Redirect} from "react-router-dom";
-import useForm from "react-hook-form";
 import {RangeDatePicker} from '@y0c/react-datepicker';
 import '@y0c/react-datepicker/assets/styles/calendar.scss'
-import Select from "react-select";
 
 
-const SignupSchema = Yup.object().shape({
-    region: Yup.string().required(),
-    law: Yup.string().required(),
-    type: Yup.string().required(),
-});
-
-const DataFilterForm = ({t, isAuth, filter, submitForm, changeDate, errorsDate}) => {
-    const {handleSubmit, register, errors, setValue} = useForm({validationSchema: SignupSchema});
+const DataFilterForm = ({
+                            t, isAuth, filter, submitForm, changeDate, errorsDate,
+                            showTextarea, handleShowTextarea, handleSubmit, register, errors, setValue
+                        }) => {
     const onSubmit = values => {
         submitForm(values);
     };
@@ -48,9 +41,22 @@ const DataFilterForm = ({t, isAuth, filter, submitForm, changeDate, errorsDate})
                                 endPlaceholder={t("data.finishPeriodField")}/>
                         </div>
                         <div>
-                            <CreatableSingle setValue={setValue} register={register} filter={filter} name={'type'}
-                                             title={t("filter.type")} errors={errors} t={t}/>
+                            <CheckBoxWrapper setValue={setValue} register={register} filter={filter} name={'changeType'}
+                                             title={t("filter.changeType")} errors={errors} t={t}
+                                             checked={showTextarea}
+                                             onChange={handleShowTextarea}
+                            />
                         </div>
+                        {showTextarea ?
+                            <div>
+                                <TextAreaWrapper setValue={setValue} register={register} filter={filter} name={'typeChange'}
+                                                 title={t("filter.typeChange")} errors={errors} t={t}/>
+                            </div>
+                            :
+                            <div>
+                                <SingleSelect setValue={setValue} register={register} filter={filter} name={'type'}
+                                              title={t("filter.type")} errors={errors} t={t}/>
+                            </div>}
                         <div className="modal-footer text-center b-t mt-lg">
                             <Button title={t("filter.btn")}
                                     className="btn btn--brand btn--long btn--no-shadow js-services-modal-toggler"/>

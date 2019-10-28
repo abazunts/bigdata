@@ -2,13 +2,14 @@ import React, {Fragment} from 'react';
 import {translate} from "react-i18next";
 
 
-const FieldWrapper = ({title, register, name, errors, t, type}) => {
+const FieldWrapper = ({title, register, name, errors, t, type, className}) => {
       return <Fragment>
-        <div className="form-group support__form-group">
-            <p className="form-group__label">{title}</p>
-            <input type={type} name={name} className={errors[name] === true ? "input js-input input--red input--rect" : 'input js-input input--blue input--rect'}
+        <div className={!className && "form-group support__form-group"}>
+            <p className="form-group__label">{title}{!className && <span className="text-danger">*</span>}
+            {errors[name] && <span className="text-danger">{t('errors.isRequired')}</span>}</p>
+            <input type={type} name={name} className={!className && 'input js-input input-grey input--rect'}
                    ref={register}
-                   placeholder= {errors[name] && t(`errors.${name}`)}/>
+                  />
         </div>
     </Fragment>
 };

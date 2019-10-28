@@ -35,7 +35,9 @@
     "law": "Law",
     "period": "Period",
     "type": "Type",
+    "typeChange": "Type",
     "title": "Data filter",
-    "btn": "Submit"
+    "btn": "Submit",
+    "changeType": "Other query"
   }
 }
